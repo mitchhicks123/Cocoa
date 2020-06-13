@@ -1,20 +1,33 @@
+
+/* Style for main Page and generics */
+
 #homeHeader {
   text-align: center;
-  margin-top: 3%;
+  margin-top: -5%;
   margin-bottom: -5%;
   font-size: 200%;
   font-family: 'Dancing Script', cursive;
 
+}
+.homeButton{
 
-
-
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: black;
+  display: inline-block;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+.homeButton a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
 }
 
 .pictureContainer {
 
   width: 100%;
-
-
   display: inline-flex;
   justify-content: center;
   padding-top: 2.5%;
@@ -29,6 +42,18 @@
   font-family: 'Dancing Script', cursive;
 }
 
+.pictures a {
+  color:black;
+
+}
+
+.picturesOnly {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+
+/*Style for a smaller screen like mobile */
 @media screen and (max-width: 600px){
   .pictureContainer {
 
@@ -37,25 +62,86 @@
     align-items: center;
 
   }
+  .galleryContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
   .pictures{
-
     width: 200px;
-
     margin: none;
 
+  }
+  #homeHeader{
+    font-size: 100%;
+  }
+  .homeButton{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+  }
+  .homeButton a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+  }
+  #characterBody {
+    margin: 5px;
 
+  }
+  .body{
+    margin-left:10px;
+    margin-right:10px;
   }
 }
 
-#picture1 {
-  border: 3px solid black;
-  border-radius: 20px;
+/* style special for PhotoGallery*/
+
+.galleryContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2.5%;
 }
-#picture2 {
-  border: 3px solid black;
-  border-radius: 20px;
+
+/* special style for about html */
+
+.aboutTable{
+  border: 2px solid black;
+  border-collapse: collapse;
 }
-#picture3 {
-  border: 3px solid black;
-  border-radius: 20px;
+.aboutTable td, th  {
+  border: 2px solid black;
+  text-align: center;
+}
+.aboutTable td ul {
+  text-align: left;
+}
+
+
+
+
+
+/* special style for character.html */
+
+.body {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top:10%;
+}
+
+#characterTitle {
+  font-size: 125%;
+  margin-bottom: 0%;
+  font-family:'Dancing Script', cursive;
+}
+
+#listTitle {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-family:'Dancing Script', cursive;
 }
